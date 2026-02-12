@@ -312,6 +312,22 @@ Type in `git status`. If it says on branch `main`, you're doing good. If it says
 
 So do `git branch -M main`, that should rename your branch from `master` to `main`. Do `git status` and if it says something like: You're on branch main. Then you're good. For everyone else who it says something else for, good luck!
 
-Now we're going to stage our changes. What this means is that we're going to select the changes that we want to see in our remote repository (online). To do this we can either do `git add file/path` or `git add .` to add everything.
+Now we're going to stage our changes. What this means is that we're going to select the changes that we want to see in our remote repository (online). To do this we can either do `git add file/path` to add specific files or `git add .` to add everything.
+Once that's done you can do: `git status`. Everything should say staged, or they all should be green if your terminal is cool like mine \#imcool.
+
+Now let's do `git commit -m "meaningful ~-[,,_,,]:3 message"` for anyone wondering, my initial commit message usually includes an ascii version of
+nyan cat. `-m` means add a message, but you can omit it if you want to be thrown into a VIM window that you don't understand how to use because you refused to learn VIM (smh).
+
+P.S. If you end up in that window simply hit `shift+o` then type a message, then hit `esc`, then `:wq`. That should get you out. If you want to understand it though go up to [Learn Vim](#for-vim-users).
+
+Now navigate to your personal GitHub page. For example, the link for my page would look something like: `https://github.com/kyle-parker-1500/`
+It's right [here](https://github.com/kyle-parker-1500/) if you want to check it out.
+
+Click on the `repositories` tab (it's right next to `overview`). Then click on `new` (it's a green button in the top right, can't miss it).
+
+Name your repository something meaningful like: `DrCIsGenuinelyTheBestProfessorIThinkIveEverHadAndHeSoFarHasMadeTheBestJokesAndThisIsntEvenMyImpressionOfHimAsHisTAItsMoresoJustLikeAGeneralRespectForHisLevelOfChillWhichBTWGetsALotBetterIfYouCommitEnoughTimeToHisProjectsAndUseResourcesLikeThisTutorialToLearnTheMaterialForHisClass`.
+
+Once you've done that change your repository visibility to Private (I mean you can keep it public but what if a recruiter is looking at your repo and is like wtf! why are there so many profanities in this dude's notes! Hasn't happened to me yet, but it will probably).
+Don't change anything after that and hit create repository. Copy the link that's given by the next page and take note of the `.git` at the end of the link. For example: `https://github.com/kyle-parker-1500/note-taking-tutorial.git` is my remote repo link for this repository.
 
 ## Use AI to Create Quizzes for Yourself
