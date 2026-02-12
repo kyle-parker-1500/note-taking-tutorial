@@ -9,7 +9,7 @@ I'll attach some of my notes to this document to show you how I generally take n
   - The answer may be no at first but let me tell you this:
     - I used to hate sitting down to code, mostly because using a mouse was annoying to say the least, so I picked up VIM (and I'm never going back)
   - Basically your answer should be yes, but I'll account for both cases in-case you're not ready to take the leap
-  - If you're not ready click this: [Link](/kyles_guide_to_taking_college_notes#for-regular-people)
+  - If you're not ready click this: [Link](#for-regular-people)
 
 ## For VIM Users ##
 By the way, I'm including EMACS and other text editor users in this case. (Although if you use them and not VIM what are you even doing tbh) -> :)
