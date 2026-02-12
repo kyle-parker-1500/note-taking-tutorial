@@ -224,42 +224,42 @@ your thoughts and ideas and your code/text. (This isn't an ad for Vim, I swear!)
 
 Okay let's get started with the **Regular People** tutorial:
 
-This will assume that you have some form of [VSCode](https://code.visualstudio.com/download) or [Intellij IDEA](https://www.jetbrains.com/help/idea/installation-guide.html) installed. (You can also use NeoVim :) )
-I'll stop mentioning it now.
+1. This will assume that you have some form of [VSCode](https://code.visualstudio.com/download) or [Intellij IDEA](https://www.jetbrains.com/help/idea/installation-guide.html) installed. (You can also use NeoVim :) )
+   I'll stop mentioning it now.
 
-Just so you know, I'm quite terrible at using the Git GUI (graphical user interface) so this tutorial will use purely command line Git.
-With that being said: go Git [Git](https://git-scm.com/install/) if you don't have it already! \*Poke, Poke\* Git it?
-(For those of you who've read everything up to this point, ignore that).
+2. Just so you know, I'm quite terrible at using the Git GUI (graphical user interface) so this tutorial will use purely command line Git.
+   With that being said: go Git [Git](https://git-scm.com/install/) if you don't have it already! \*Poke, Poke\* Git it?
+   (For those of you who've read everything up to this point, ignore that).
 
-If you don't know whether or not you have Git installed you can check by navigating to your terminal (for Mac and Linux users) or literally
-going to [terminal](https://apps.microsoft.com/detail/9N0DX20HK701?hl=en-us&gl=US&ocid=pdpshare) for Windows users. (Install it if you
-don't have it already! Please for the love of code don't use Cmd); <- this `;` was unintentional but I'm leaving it.
+3. If you don't know whether or not you have Git installed you can check by navigating to your terminal (for Mac and Linux users) or literally
+   going to [terminal](https://apps.microsoft.com/detail/9N0DX20HK701?hl=en-us&gl=US&ocid=pdpshare) for Windows users. (Install it if you
+   don't have it already! Please for the love of code don't use Cmd); <- this `;` was unintentional but I'm leaving it.
 
-Okay, launch your favorite IDE (Integrated Development Environment) (e.g.: Intellij or VSCode) and then open a new project.
+4. Okay, launch your favorite IDE (Integrated Development Environment) (e.g.: Intellij or VSCode) and then open a new project.
 
 ### Initializing a Git Repo on a Local Machine
 
-Okay let's initialize a new Git repo on your local machine. First, make sure you're inside your IDE of choice, then open the builtin terminal.
-With Intellij I think the hotkey (for Windows users) is: _ctrl+escape_ for VSCode I think it's _ctrl+\`_ but don't quote me on that!
+1. Okay let's initialize a new Git repo on your local machine. First, make sure you're inside your IDE of choice, then open the builtin terminal.
+   With Intellij I think the hotkey (for Windows users) is: _ctrl+escape_ for VSCode I think it's _ctrl+\`_ but don't quote me on that!
 
-Once your terminal is open make sure that you're in your project's directory. To double check this use `pwd` (present working directory) to see
-what your current file path is. You can get the filepath of your project by right clicking on where ever your project directory is and clicking _open in_ and then your file explorer of choice -> ex: Finder for Mac. You can see all the terminal commands that we'll be using by clicking: [Here](#terminal-commands).
+2. Once your terminal is open make sure that you're in your project's directory. To double check this use `pwd` (present working directory) to see
+   what your current file path is. You can get the filepath of your project by right clicking on where ever your project directory is and clicking _open in_ and then your file explorer of choice -> ex: Finder for Mac. You can see all the terminal commands that we'll be using by clicking: [Here](#terminal-commands).
 
-If your terminal says that you aren't in the correct directory, make sure to click the link above and go check out the terminal commands part of
-this.
-That will help.
+- If your terminal says that you aren't in the correct directory, make sure to click the link above and go check out the terminal commands part of
+  this.
+  That will help.
 
-At this point, I'll assume you've reached the current directory of your project. Perfect!
+1. At this point, I'll assume you've reached the current directory of your project. Perfect!
 
-Let's start off by initializing a Git repository.
-(I realize you can do this a lot more easily using the GUI stuff but just bear with me, you
-might even learn something for once).
-In your terminal type `git init`. If Git is installed properly you should see something like: "Empty repository initialized."
+2. Let's start off by initializing a Git repository.
+   (I realize you can do this a lot more easily using the GUI stuff but just bear with me, you
+   might even learn something for once).
+   In your terminal type `git init`. If Git is installed properly you should see something like: "Empty repository initialized."
 
-Now let's add some notes. Just right click your empty project and click _add file_. Name the file something like `ThorIsTheGodOfThunderButHeCantEvenRunFasterThanATruckAlsoHeCantReallyFlyThatFastAndHasAnyoneEverThoughtAboutHowHeOnlyEverShootsLightningIMeanWhatIsTheGodOfThunderEvenSupposedToDoMakeLoudNoisesAndScareDogsIntoSubmissionOOOOhScary.md`.
-The `.md` is very important here because that's the type of file we'll be using. It's called _markdown_ and it basically allows us to write super nice and clean notes without doing much actual work ourselves. How do you think I'm writing this tutorial right now? [Here's](#) a link to my notes on markdown.
+3. Now let's add some notes. Just right click your empty project and click _add file_. Name the file something like `ThorIsTheGodOfThunderButHeCantEvenRunFasterThanATruckAlsoHeCantReallyFlyThatFastAndHasAnyoneEverThoughtAboutHowHeOnlyEverShootsLightningIMeanWhatIsTheGodOfThunderEvenSupposedToDoMakeLoudNoisesAndScareDogsIntoSubmissionOOOOhScary.md`.
+   The `.md` is very important here because that's the type of file we'll be using. It's called _markdown_ and it basically allows us to write super nice and clean notes without doing much actual work ourselves. How do you think I'm writing this tutorial right now? [Here's](#) a link to my notes on markdown.
 
-Now that you're an expert on markdown I expect you to write some notes into the `.md` file and save it.
+4. Now that you're an expert on markdown I expect you to write some notes into the `.md` file and save it.
 
 I know you haven't done it yet. Go back and do it. I'll wait for you.
 
@@ -296,35 +296,35 @@ Ha! You thought you had me huh?!
 
 Okay I'm done, on with the tutorial!
 
-Now that you've saved it (right? you've saved it? _hint:_ use `ctrl+s` or `command+s`) we can stage our changes to commit in Git.
-So reopen your terminal and type this in. Well actually, first, we want to check if you're on the correct branch.
-For those of you who worked ahead and checked out a different branch, you did nothing wrong, in-fact I'd go as far as to say I'm proud of you.
-But for the sake of this tutorial don't follow the next part word for word. For anyone that doesn't know what the fuck I'm talking about:
-this is for you.
+1. Now that you've saved it (right? you've saved it? _hint:_ use `ctrl+s` or `command+s`) we can stage our changes to commit in Git.
+   So reopen your terminal and type this in. Well actually, first, we want to check if you're on the correct branch.
+   For those of you who worked ahead and checked out a different branch, you did nothing wrong, in-fact I'd go as far as to say I'm proud of you.
+   But for the sake of this tutorial don't follow the next part word for word. For anyone that doesn't know what the fuck I'm talking about:
+   this is for you.
 
-Type in `git status`. If it says on branch `main`, you're doing good. If it says on branch `master` we're going to have to change some things.
+2. Type in `git status`. If it says on branch `main`, you're doing good. If it says on branch `master` we're going to have to change some things.
 
 - The reason we have to change things is because `GitHub` is transitioning away from development branches being named `master`, why? no idea. But they make it really annoying if we don't rename it.
 - On the bright side, I get to show you how to rename a branch in Git.
 
-So do `git branch -M main`, that should rename your branch from `master` to `main`. Do `git status` and if it says something like: You're on branch main. Then you're good. For everyone else who it says something else for, good luck!
+1. So do `git branch -M main`, that should rename your branch from `master` to `main`. Do `git status` and if it says something like: You're on branch main. Then you're good. For everyone who it says something else for: good luck!
 
-Now we're going to stage our changes. What this means is that we're going to select the changes that we want to see in our remote repository (online). To do this we can either do `git add file/path` to add specific files or `git add .` to add everything.
-Once that's done you can do: `git status`. Everything should say staged, or they all should be green if your terminal is cool like mine \#imcool.
+2. Now we're going to stage our changes. What this means is that we're going to select the changes that we want to see in our remote repository (online). To do this we can either do `git add file/path` to add specific files or `git add .` to add everything.
+   Once that's done you can do: `git status`. Everything should say staged, or they all should be green if your terminal is cool like mine \#imcool.
 
-Now let's do `git commit -m "meaningful ~-[,,_,,]:3 message"` for anyone wondering, my initial commit message usually includes an ascii version of
-nyan cat. `-m` means add a message, but you can omit it if you want to be thrown into a VIM window that you don't understand how to use because you refused to learn VIM (smh).
+3. Now let's do `git commit -m "meaningful ~-[,,_,,]:3 message"` for anyone wondering, my initial commit message usually includes an ascii version of
+   nyan cat. `-m` means add a message, but you can omit it if you want to be thrown into a VIM window that you don't understand how to use because you refused to learn VIM (smh).
 
-P.S. If you end up in that window simply hit `shift+o` then type a message, then hit `esc`, then `:wq`. That should get you out. If you want to understand it though go up to [Learn Vim](#for-vim-users).
+- P.S. If you end up in that window simply hit `shift+o` then type a message, then hit `esc`, then `:wq`. That should get you out. If you want to understand it though go up to [Learn Vim](#for-vim-users).
 
-Now navigate to your personal GitHub page. For example, the link for my page would look something like: `https://github.com/kyle-parker-1500/`
-It's right [here](https://github.com/kyle-parker-1500/) if you want to check it out.
+1. Now navigate to your personal GitHub page. For example, the link for my page would look something like: `https://github.com/kyle-parker-1500/`
+   It's right [here](https://github.com/kyle-parker-1500/) if you want to check it out.
 
-Click on the `repositories` tab (it's right next to `overview`). Then click on `new` (it's a green button in the top right, can't miss it).
+2. Click on the `repositories` tab (it's right next to `overview`). Then click on `new` (it's a green button in the top right, can't miss it).
 
-Name your repository something meaningful like: `DrCIsGenuinelyTheBestProfessorIThinkIveEverHadAndHeSoFarHasMadeTheBestJokesAndThisIsntEvenMyImpressionOfHimAsHisTAItsMoresoJustLikeAGeneralRespectForHisLevelOfChillWhichBTWGetsALotBetterIfYouCommitEnoughTimeToHisProjectsAndUseResourcesLikeThisTutorialToLearnTheMaterialForHisClass`.
+3. Name your repository something meaningful like: `DrCIsGenuinelyTheBestProfessorIThinkIveEverHadAndHeSoFarHasMadeTheBestJokesAndThisIsntEvenMyImpressionOfHimAsHisTAItsMoresoJustLikeAGeneralRespectForHisLevelOfChillWhichBTWGetsALotBetterIfYouCommitEnoughTimeToHisProjectsAndUseResourcesLikeThisTutorialToLearnTheMaterialForHisClass`.
 
-Once you've done that change your repository visibility to Private (I mean you can keep it public but what if a recruiter is looking at your repo and is like wtf! why are there so many profanities in this dude's notes! Hasn't happened to me yet, but it will probably).
-Don't change anything after that and hit create repository. Copy the link that's given by the next page and take note of the `.git` at the end of the link. For example: `https://github.com/kyle-parker-1500/note-taking-tutorial.git` is my remote repo link for this repository.
+4. Once you've done that change your repository visibility to Private (I mean you can keep it public but what if a recruiter is looking at your repo and is like wtf! why are there so many profanities in this dude's notes! Hasn't happened to me yet, but it will probably).
+   Don't change anything after that and hit create repository. Copy the link that's given by the next page and take note of the `.git` at the end of the link. For example: `https://github.com/kyle-parker-1500/note-taking-tutorial.git` is my remote repo link for this repository.
 
 ## Use AI to Create Quizzes for Yourself
