@@ -155,7 +155,7 @@ Now that we have our notes, let's connect them to a GitHub remote repository so 
 1. Go to GitHub and navigate to your account profile. It's typically going to be `https://github.com/your-username/`
   1. Navigate to the `Repositories` tab at the top next to `Overview`
   2. Click on `New` in the top right corner
-  3. Give your repository a meaningful name (it makes it easier, trust me). I normally name mine something like: `IronManWasTheBestSupervillanAroundUntilHeTragicallyBecameASuperHeroAndSavedALotOfLivesForSomeReason` or something like that.
+  3. Give your repository a meaningful name (it makes it easier, trust me). I normally name mine something like: `IronManWasTheBestSupervillanAroundUntilHeTragicallyBecameASuperHeroAndSavedALotOfLivesForSomeReasonIMeanDudeHeDidntHaveToSnap` or something like that.
   4. Choose your repo visibility. Since we're writing notes, I typically make mine private so people don't find my badly written notes when searching for one of my projects
   5. Don't change anything besides that and create the repository.
   6. A window should pop up displaying a link similar to this one: `https://github.com/your-username/your-repo-name.git`
