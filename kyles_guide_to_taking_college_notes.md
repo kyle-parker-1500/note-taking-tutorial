@@ -181,7 +181,7 @@ You should see a lot of text that says that Git is doing stuff. And then it shou
 
 Keep in mind, you could have merge conflicts if you and a friend are working on the same file!
 
-And then you're done! Hope you end up using this method for taking notes in class! Click [Here](./kyles_guide_to_taking_college_notes#Quiz_Yourself) to go to the AI Quiz portion of the Tutorial.
+And then you're done! Hope you end up using this method for taking notes in class! Click [Here](#use-ai-to-create-quizzes-for-yourself) to go to the AI Quiz portion of the Tutorial.
 
 ## For Regular People ##
 
