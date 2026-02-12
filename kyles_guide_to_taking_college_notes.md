@@ -12,7 +12,7 @@ I'll attach some of my notes to this document to show you how I generally take n
   - If you're not ready click this: [Link](#for-regular-people)
 
 ## For VIM Users ##
-By the way, I'm including EMACS and other text editor users in this case. (Although if you use them and not VIM what are you even doing tbh) -> :)
+By the way, I'm including EMACS and other text editor users in this case. (Although if you use them and not VIM what are you even doing tbh)   -> :)
 
 1. Install VIM. I would suggest **NeoVim** for everyone: Essentially it's VIM, just a newer version
   - Here's the [Link](https://neovim.io/doc/install/) for Windows and a blog [post](https://dev.to/ajtech0001/complete-guide-installing-and-configuring-neovim-on-macos-4a9e) for Mac
