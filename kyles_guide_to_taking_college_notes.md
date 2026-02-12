@@ -163,9 +163,10 @@ Now that we have our notes, let's connect them to a GitHub remote repository so 
   7. Copy the link and go back to your local machine (make sure you open the terminal (or keep it open) to where your notes are being stored)
   8. If you don't know if your notes are in your current directory remember to use `ls` (list) to check
   9. Your local repository should be initialized (remember we did `git init`), so we can now do: `git remote -v` to check if we have any remote repositories connected to our local one
-  10. Also do `git status`. If, at the top left it says you're on branch `master` then you want to execute this command `git branch -M main` which will rename it to main
+  10. If anything other than absolutely nothing comes up either keep it because you likely know what you're doing OR do `git remote remove origin` (that removes your remote repository link)
+  11. Also do `git status`. If, at the top left it says you're on branch `master` then you want to execute this command `git branch -M main` which will rename it to main
   - The reason we do this is because most of GitHub has moved away from using `master` as a root origin branch name
-  11. If anything other than absolutely nothing comes up either keep it because you likely know what you're doing OR do `git remote remove origin` (that removes your remote repository link)
+  
   12. Now execute this command: `git remote add origin your-link` for example: `git remote add origin https://github.com/kyle-parker-1500/note-taking-tutorial.git` That's my repository for this tutorial.
   13. It should say something along the lines of: *You didn't fuck up*
   14. Once that's done we want to now pull any changes made to our remote repository. We know there aren't any changes but it's good practice.
