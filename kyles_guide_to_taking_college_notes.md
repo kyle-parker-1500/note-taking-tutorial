@@ -33,7 +33,7 @@ Now that we're ready to take notes, let me walk you through my typical setup. Si
     - `mkdir new_name` you can use `mkdir` to 'make directory', the `directory name` shouldn't contain any spaces. Although, I *think* you can include spaces if you do something like `mkdir "new_directory"` but that's bad practice, especially for programmers.
     - If you want to open VSCode from your current directory you can use `code .`, make sure you have an *environment variable* set up for VSCode first. You can also just open any file in VSCode using `code /this/is/a/path/name/directory(or file)`. Keep in mind, if you want to open a file you have to specify the file type.
     - `ls` -> use `ls` to list everything in the current or specified directory. Specified meaning `ls /path/to/dir`
-    - `mv` to either move a file or rename -> *moving*: `mv filename.filetype ../new_previous_directory` or *renaming*: `mv filename.filetype new_filename.filetype`, you can also rename directories with this command.
+    - `mv` to either move a file or rename -> *moving*: `mv filename.filetype ../previous_directory` or *renaming*: `mv filename.filetype new_filename.filetype`, you can also rename directories with this command.
     - `rm` -> be careful with this one. This is how you delete things: `rm filename.filetype`, if someone tells you to `rm -rf` something DON'T LISTEN TO THEM!! `-rf` is an option that recursively forces all files and all directories to be removed from your current or specified directory all the way down (this is only for Mac and Linux users though... I think).
     - Final thing -> use `pwd` to check your *present working directory*
     - That's basically it for basic terminal commands (these apply to both windows terminal and unix terminals). If you want something more advanced check out some guides online: Here's one -> [Link](https://serverspace.us/support/help/windows-cmd-commands-cheat-sheet/)
@@ -128,7 +128,7 @@ These Go Up to 6 ###### so I'm moving on. They just keep making the header text 
 | \*\*word\*\* | Bold | **word** |
 | \-\[\] | Checklist | -[] (may not display properly) |
 | \[\]\(\) | Link Something | [Text For Link Here](Link in here (no quotes needed)) [Link](https://github.com/kyle-parker-1500) |
-| \!\[\]\(\) | Display Image | [Alt Text For Image Here](Path name (no quotes needed)) |
+| \!\[\]\(\) | Display Image | ![Alt Text For Image Here](Path name (no quotes needed)) |
 
 I think that's about it. Like VIM there's many more, but I either haven't learned them or forgot about them. Play around with it though. You can also insert tables, but I'll let you figure that out on your own. LazyVim makes it really easy btw!
 
