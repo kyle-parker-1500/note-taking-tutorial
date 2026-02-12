@@ -82,52 +82,49 @@ Vim is definitely much easier once you get the muscle memory down for the moveme
 
 **Basic NeoVim Commands:**
 
-| Commands         | What They Do                                                                             |
-| ---------------- | ---------------------------------------------------------------------------------------- |
-| k                | Move Cursor Up                                                                           |
-| j                | Move Cursor Down                                                                         |
-| h                | Move Cursor Left                                                                         |
-| l                | Move Cursor Right                                                                        |
-| esc (escape key) | Enter "Normal" Mode (for moving cursor)                                                  |
-| :                | Command Line Mode (for commands)                                                         |
-| :w               | Write to file (save)                                                                     |
-| :q               | Quit file (make sure to write first!)                                                    |
-| :wq              | Write and then quit file                                                                 |
-| i                | Insert Mode (for typing)                                                                 |
-| v                | Visual Mode (highlighting)                                                               |
-| w                | Move to beginning of next word                                                           |
-| e                | Move to end of current word                                                              |
-| b                | Move to beginning of previous word                                                       |
-| r                | Replace current character                                                                |
-| R                | Keep replacing until esc is pressed                                                      |
-| dd               | Delete full line (and save it until something else is deleted )                          |
-| dd               | Cut                                                                                      |
-| dw               | Delete word                                                                              |
-| yy               | Copy Line                                                                                |
-| p                | Paste saved text below cursor (either dd or yy, whichever was performed last)            |
-| P                | Paste saved text above cursor (either dd or yy, whichever was performed last)            |
-| o                | Insert empty line below cursor                                                           |
-| O                | Insert empty line above cursor                                                           |
-| gg               | Go to top of the file                                                                    |
-| G                | Go to bottom of the file                                                                 |
-| gul              | Make 1 character to the right lowercase                                                  |
-| gUl              | Make 1 character to the right uppercase                                                  |
-| \*               | Display all instances of the word the cursor is on (can use n and N to navigate)         |
-| >>               | Indent one line                                                                          |
-| <<               | Un-indent (idk what it's called) one line                                                |
-| /                | Search (forward) through the file (you can use N and n to navigate which word you're on) |
-
-These commands typically have limited history saved but they still work (just be careful):
-| u | Undo |
-| Ctrl+r | Redo |
-| "\*y | Copy specified text to clipboard |
-| "\*p | Paste text from clipboard |
-Some Commands:
-| :%s/word_to_replace/word_to_replace_with/ | Replace one instance of first word with second word |
-| :%s/word_to_replace/word_to_replace_with/g | Replace all instances of first word with second word (without asking if it's okay to do so) |
-| :%s/word_to_replace/word_to_replace_with/gc | Replace all instances of first word with second word (asks if it's okay) |
-| :help | To help you learn all commands |
-| :help specific_command | To help you learn one specific command |
+| Commands                                    | What They Do                                                                                |
+| ------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| k                                           | Move Cursor Up                                                                              |
+| j                                           | Move Cursor Down                                                                            |
+| h                                           | Move Cursor Left                                                                            |
+| l                                           | Move Cursor Right                                                                           |
+| esc (escape key)                            | Enter "Normal" Mode (for moving cursor)                                                     |
+| :                                           | Command Line Mode (for commands)                                                            |
+| :w                                          | Write to file (save)                                                                        |
+| :q                                          | Quit file (make sure to write first!)                                                       |
+| :wq                                         | Write and then quit file                                                                    |
+| i                                           | Insert Mode (for typing)                                                                    |
+| v                                           | Visual Mode (highlighting)                                                                  |
+| w                                           | Move to beginning of next word                                                              |
+| e                                           | Move to end of current word                                                                 |
+| b                                           | Move to beginning of previous word                                                          |
+| r                                           | Replace current character                                                                   |
+| R                                           | Keep replacing until esc is pressed                                                         |
+| dd                                          | Delete full line (and save it until something else is deleted )                             |
+| dd                                          | Cut                                                                                         |
+| dw                                          | Delete word                                                                                 |
+| yy                                          | Copy Line                                                                                   |
+| p                                           | Paste saved text below cursor (either dd or yy, whichever was performed last)               |
+| P                                           | Paste saved text above cursor (either dd or yy, whichever was performed last)               |
+| o                                           | Insert empty line below cursor                                                              |
+| O                                           | Insert empty line above cursor                                                              |
+| gg                                          | Go to top of the file                                                                       |
+| G                                           | Go to bottom of the file                                                                    |
+| gul                                         | Make 1 character to the right lowercase                                                     |
+| gUl                                         | Make 1 character to the right uppercase                                                     |
+| \*                                          | Display all instances of the word the cursor is on (can use n and N to navigate)            |
+| >>                                          | Indent one line                                                                             |
+| <<                                          | Un-indent (idk what it's called) one line                                                   |
+| /                                           | Search (forward) through the file (you can use N and n to navigate which word you're on)    |
+| u                                           | Undo                                                                                        |
+| Ctrl+r                                      | Redo                                                                                        |
+| "\*y                                        | Copy specified text to clipboard                                                            |
+| "\*p                                        | Paste text from clipboard                                                                   |
+| :%s/word_to_replace/word_to_replace_with/   | Replace one instance of first word with second word                                         |
+| :%s/word_to_replace/word_to_replace_with/g  | Replace all instances of first word with second word (without asking if it's okay to do so) |
+| :%s/word_to_replace/word_to_replace_with/gc | Replace all instances of first word with second word (asks if it's okay)                    |
+| :help                                       | To help you learn all commands                                                              |
+| :help specific_command                      | To help you learn one specific command                                                      |
 
 Okay that's just about all the VIM commands I know. There's so many more though. So do your research and then come teach me some commands. The more unique the command the more extra credit I'll give you! (Just kidding, I can't give out extra credit).
 
@@ -140,22 +137,22 @@ Side note: If you want to get to full screen in LazyVim on Windows you can use `
 - Okay! You're in VIM and you know how to use it!!
 - Let's learn some markdown things now!
 
-| Symbols | What They Do:             | What They Should Look Like |
-| ------- | ------------------------- | -------------------------- |
-| #       | Header 1 (Biggest)        | # Header #                 |
-| ##      | Header 2 (Second Biggest) | ## Header ##               |
-| ###     | Header 3 (Third Biggest)  | ### Header ###             |
+| Symbols                       | What They Do:                                                                      | What They Should Look Like                                                                        |
+| ----------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| #                             | Header 1 (Biggest)                                                                 | # Header #                                                                                        |
+| ##                            | Header 2 (Second Biggest)                                                          | ## Header ##                                                                                      |
+| ### (can go up to 6 #)        | Header 3 (Third Biggest)                                                           | ### Header ###                                                                                    |
+| \`\`                          | Inline Code Highlighting (no syntax highlighting)                                  | `code`                                                                                            |
+| \`\`\`name of language \`\`\` | Block Code Highlighting (provides syntax highlighting if you provide the language) | `c++ int x = 0;`                                                                                  |
+| 1.                            | Ordered List (Can indent)                                                          | 1.                                                                                                |
+| \-                            | Unordered List (Can indent)                                                        | -                                                                                                 |
+| \*word\*                      | Italics                                                                            | _word_                                                                                            |
+| \*\*word\*\*                  | Bold                                                                               | **word**                                                                                          |
+| \-\[\]                        | Checklist                                                                          | -[] (may not display properly)                                                                    |
+| \[\]\(\)                      | Link Something                                                                     | [Text For Link Here](Link in here (no quotes needed)) [Link](https://github.com/kyle-parker-1500) |
+| \!\[\]\(\)                    | Display Image                                                                      | ![Alt Text For Image Here](Path name (no quotes needed))                                          |
 
 These Go Up to 6 ###### so I'm moving on. They just keep making the header text smaller.
-| \`\` | Inline Code Highlighting (no syntax highlighting) | `code` |
-| \`\`\`name of language \`\`\` | Block Code Highlighting (provides syntax highlighting if you provide the language)| `c++ int x = 0;` |
-| 1. | Ordered List (Can indent) | 1. |
-| \- | Unordered List (Can indent) | - |
-| \*word\* | Italics | _word_ |
-| \*\*word\*\* | Bold | **word** |
-| \-\[\] | Checklist | -[] (may not display properly) |
-| \[\]\(\) | Link Something | [Text For Link Here](Link in here (no quotes needed)) [Link](https://github.com/kyle-parker-1500) |
-| \!\[\]\(\) | Display Image | ![Alt Text For Image Here](Path name (no quotes needed)) |
 
 I think that's about it. Like VIM there's many more, but I either haven't learned them or forgot about them. Play around with it though. You can also insert tables, but I'll let you figure that out on your own. LazyVim makes it really easy btw!
 
