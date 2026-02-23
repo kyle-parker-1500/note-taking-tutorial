@@ -348,15 +348,17 @@ Okay I'm done, on with the tutorial!
 Now that you've saved it (right? you've saved it? _hint:_ use `ctrl+s` or `command+s`) we can stage our changes to commit in Git.
 So reopen your terminal and type this in. Well actually, first, we want to check if you're on the correct branch.
 For those of you who worked ahead and checked out a different branch, you did nothing wrong, in-fact I'd go as far as to say I'm proud of you.
-But for the sake of this tutorial don't follow the next part word for word. For anyone that doesn't know what the fuck I'm talking about:
+But for the sake of this tutorial don't follow the next part word for word. For anyone that doesn't know what the \*fuck\* I'm talking about:
 this is for you.
 
 Type in `git status`. If it says on branch `main`, you're doing good. If it says on branch `master` we're going to have to change some things.
 
-- The reason we have to change things is because `GitHub` is transitioning away from development branches being named `master`, why? no idea. But they make it really annoying if we don't rename it.
+- The reason we have to change things is because `GitHub` is transitioning away from development branches being named `master`, why? no fucking idea. But they make it *really* fucking annoying if we don't rename it.
 - On the bright side, I get to show you how to rename a branch in Git.
 
 So do `git branch -M main`, that should rename your branch from `master` to `main`. Do `git status` and if it says something like: You're on branch main. Then you're good. For everyone who it says something else for: good luck!
+
+![Renaming Branch Git](./git_commands_3.png)
 
 Now we're going to stage our changes. What this means is that we're going to select the changes that we want to see in our remote repository (online). To do this we can either do `git add file/path` to add specific files or `git add .` to add everything.
 Once that's done you can do: `git status`. Everything should say staged, or they all should be green if your terminal is cool like mine \#imcool.
@@ -364,16 +366,24 @@ Once that's done you can do: `git status`. Everything should say staged, or they
 Now let's do `git commit -m "meaningful ~-[,,_,,]:3 message"` for anyone wondering, my initial commit message usually includes an ascii version of
 nyan cat. `-m` means add a message, but you can omit it if you want to be thrown into a VIM window that you don't understand how to use because you refused to learn VIM (smh).
 
+![Committing Without Failing](./git_commands_5.png)
+
 P.S. If you end up in that window simply hit `shift+o` then type a message, then hit `esc`, then `:wq`. That should get you out. If you want to understand it though go up to [Learn Vim](#for-vim-users).
+
+![Committing With Fail](./git_commands_6.png)
 
 Now navigate to your personal GitHub page. For example, the link for my page would look something like: `https://github.com/kyle-parker-1500/`
 It's right [here](https://github.com/kyle-parker-1500/) if you want to check it out.
 
 Click on the `repositories` tab (it's right next to `overview`). Then click on `new` (it's a green button in the top right, can't miss it).
 
-Name your repository something meaningful like: `DrCIsGenuinelyTheBestProfessorIThinkIveEverHadAndHeSoFarHasMadeTheBestJokesAndThisIsntEvenMyImpressionOfHimAsHisTAItsMoresoJustLikeAGeneralRespectForHisLevelOfChillWhichBTWGetsALotBetterIfYouCommitEnoughTimeToHisProjectsAndUseResourcesLikeThisTutorialToLearnTheMaterialForHisClass`.
+![Setting Up GitHub Repository](./github_new_button_and_repo_tab.png)
+
+Name your repository something meaningful like: `DrCIsGenuinelyTheBestProfessorIThinkIveEverHadAndHeSoFarHasMadeTheBestJokesAndThisIsntEvenMyImpressionOfHimAsHisTAItsMoresoJustLikeAGeneralRespectForHisLevelOfChillWhichBTWGetsALotBetterIfYouCommitEnoughTimeToHisProjectsAndUseResourcesLikeThisTutorialToLearnTheMaterialForHisClass`
 
 Once you've done that change your repository visibility to Private (I mean you can keep it public but what if a recruiter is looking at your repo and is like wtf! why are there so many profanities in this dude's notes! Hasn't happened to me yet, but it will probably).
 Don't change anything after that and hit create repository. Copy the link that's given by the next page and take note of the `.git` at the end of the link. For example: `https://github.com/kyle-parker-1500/note-taking-tutorial.git` is my remote repo link for this repository.
+
+![Naming Repository](./github_repo_creation_2.png)
 
 ## Use AI to Create Quizzes for Yourself
