@@ -284,7 +284,7 @@ With that being said: go Git [Git](https://git-scm.com/install/) if you don't ha
 
 If you don't know whether or not you have Git installed you can check by navigating to your terminal (for Mac and Linux users) or literally
 going to [terminal](https://apps.microsoft.com/detail/9N0DX20HK701?hl=en-us&gl=US&ocid=pdpshare) for Windows users. (Install it if you
-don't have it already! Please for the love of code don't use Cmd); ← this `;` was unintentional but I'm leaving it. Anyway just do git --version to check the Git version on your terminal. If it's not working there's a good chance you either don't have it installed or messed up somewhere. In that case I would say to either ask Claude (love Claude for fixing Git issues) OR look it up.
+don't have it already! Please for the love of code don't use Cmd); ← this `;` was unintentional but I'm leaving it. Anyway just do `git --version` to check the Git version on your terminal. If it's not working there's a good chance you either don't have it installed or messed up somewhere. In that case I would say to either ask Claude (love Claude for fixing Git issues) OR look it up.
 
 Okay, launch your favorite IDE (Integrated Development Environment) (e.g.: Intellij or VSCode) and then open a new project.
 
