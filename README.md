@@ -38,14 +38,14 @@ Now that we're ready to take notes, let me walk you through my typical setup. Si
 
 1. Launch your terminal.
 
-![Image of Launched Terminal](./terminal_launch.png)
+![Image of Launched Terminal](./images/terminal_launch.png)
 
 - If you're on _Windows_ you should install the _terminal app_ ([Link](https://apps.microsoft.com/detail/9N0DX20HK701?hl=en-us&gl=US&ocid=pdpshare)) from the Windows Store and use Powershell with it. Alternatively (to Powershell, you should definitely get _terminal_), you can use WSL2 to get a Linux style shell within Windows. Here's the tutorial for installation: [WSL2 Installation](https://learn.microsoft.com/en-us/windows/wsl/install)
 - Linux and Mac users, you're fine. (I bet all you Linux users are excited to be put before Mac in this sentence. It's probably the first time you've ever been picked first for anything... except hackathons :) )
 
 2. Linux shame aside (I use Windows I shouldn't be talking), navigate to a folder that you want to take notes in.
 
-![Image of Folder I Take Notes In](./terminal_notes_folder.png)
+![Image of Folder I Take Notes In](./images/terminal_notes_folder.png)
 
 #### Terminal Commands 
 [Back To Regular People (More Like Boring People) Tutorial](#initializing-a-git-repo-on-a-local-machine)
@@ -70,9 +70,9 @@ Now that we're ready to take notes, let me walk you through my typical setup. Si
   - That's basically it for basic terminal commands (these apply to both windows terminal and unix terminals). If you want something more advanced check out some guides online: Here's one → [Advanced Guide (For Nerds)](https://serverspace.us/support/help/windows-cmd-commands-cheat-sheet/)
 
   Here are those commands in action:
-  ![Terminal Commands Demonstration 1](./terminal_commands_demonstration_1.png)
-  ![Terminal Commands Demonstration 2](./terminal_commands_demonstration_2.png)
-  ![Terminal Commands Demonstration 3](./terminal_commands_demonstration_3.png)
+  ![Terminal Commands Demonstration 1](./images/terminal_commands_demonstration_1.png)
+  ![Terminal Commands Demonstration 2](./images/terminal_commands_demonstration_2.png)
+  ![Terminal Commands Demonstration 3](./images/terminal_commands_demonstration_3.png)
   You can also use `Tab` the key on your keyboard to autocomplete your command (you're dumb for still reading the stuff inside these parenthesis)
 
 
@@ -209,13 +209,13 @@ Now that we have our notes, let's connect them to a GitHub remote repository so 
 1. Navigate to the `Repositories` tab at the top next to `Overview`
 1. Click on `New` in the top right corner
 
-![GitHub Where the New Button Is](./github_new_button_and_repo_tab.png)
+![GitHub Where the New Button Is](./images/github_new_button_and_repo_tab.png)
 
 4. Give your repository a meaningful name (it makes it easier, trust me). I normally name mine something like: `IronManWasTheBestSupervillanAroundUntilHeTragicallyBecameASuperHeroAndSavedALotOfLivesForSomeReasonIMeanDudeHeDidntHaveToSnap` or something like that.
 5. Choose your repo visibility. Since we're writing notes, I typically make mine private so people don't find my badly written notes when searching for one of my projects
 6. Don't change anything besides that and create the repository.
 
-![Repo Creation](./github_repo_creation.png)
+![Repo Creation](./images/github_repo_creation.png)
 
 7. A window should pop up displaying a link similar to this one: `https://github.com/your-username/your-repo-name.git`
 
@@ -223,16 +223,16 @@ Now that we have our notes, let's connect them to a GitHub remote repository so 
 
 8. Copy the link and go back to your local machine (make sure you open the terminal (or keep it open) to where your notes are being stored)
 
-![After Creating Repo (Still in GitHub)](./github_repo_creation_2.png)
+![After Creating Repo (Still in GitHub)](./images/github_repo_creation_2.png)
 
 9. If you don't know if your notes are in your current directory remember to use `ls` (list) to check
 10. Your local repository should be initialized (remember we did `git init`), so we can now do: `git remote -v` to check if we have any remote repositories connected to our local one
 
-![Git Commands 1](./git_commands_1.png)
+![Git Commands 1](./images/git_commands_1.png)
 
 11. If anything other than absolutely nothing comes up either keep it because you likely know what you're doing OR do `git remote remove origin` (that removes your remote repository link)
 
-![Git Commands 2](./git_commands_2.png)
+![Git Commands 2](./images/git_commands_2.png)
 
 12. Also do `git status`. If, at the top left it says you're on branch `master` then you want to execute this command `git branch -M main` which will rename it to main
 
@@ -241,7 +241,7 @@ Now that we have our notes, let's connect them to a GitHub remote repository so 
 13. Now execute this command: `git remote add origin your-link` for example: `git remote add origin https://github.com/kyle-parker-1500/note-taking-tutorial.git` That's my repository for this tutorial.
 14. It should say something along the lines of: _You didn't fuck up_
 
-![Adding Remote Origin Link](./git_commands_4.png)
+![Adding Remote Origin Link](./images/git_commands_4.png)
 
 15. Once that's done we want to now pull any changes made to our remote repository. We know there aren't any changes but it's good practice.
 
@@ -360,7 +360,7 @@ Type in `git status`. If it says on branch `main`, you're doing good. If it says
 
 So do `git branch -M main`, that should rename your branch from `master` to `main`. Do `git status` and if it says something like: You're on branch main. Then you're good. For everyone who it says something else for: good luck!
 
-![Renaming Branch Git](./git_commands_3.png)
+![Renaming Branch Git](./images/git_commands_3.png)
 
 Now we're going to stage our changes. What this means is that we're going to select the changes that we want to see in our remote repository (online). To do this we can either do `git add file/path` to add specific files or `git add .` to add everything.
 Once that's done you can do: `git status`. Everything should say staged, or they all should be green if your terminal is cool like mine \#imcool.
@@ -368,25 +368,25 @@ Once that's done you can do: `git status`. Everything should say staged, or they
 Now let's do `git commit -m "meaningful ~-[,,_,,]:3 message"` for anyone wondering, my initial commit message usually includes an ascii version of
 nyan cat. `-m` means add a message, but you can omit it if you want to be thrown into a VIM window that you don't understand how to use because you refused to learn VIM (smh).
 
-![Committing Without Failing](./git_commands_5.png)
+![Committing Without Failing](./images/git_commands_5.png)
 
 P.S. If you end up in that window simply hit `shift+o` then type a message, then hit `esc`, then `:wq`. That should get you out. If you want to understand it though go up to [Learn Vim](#for-vim-users).
 
-![Committing With Fail](./git_commands_6.png)
+![Committing With Fail](./images/git_commands_6.png)
 
 Now navigate to your personal GitHub page. For example, the link for my page would look something like: `https://github.com/kyle-parker-1500/`
 It's right [here](https://github.com/kyle-parker-1500/) if you want to check it out.
 
 Click on the `repositories` tab (it's right next to `overview`). Then click on `new` (it's a green button in the top right, can't miss it).
 
-![Setting Up GitHub Repository](./github_new_button_and_repo_tab.png)
+![Setting Up GitHub Repository](./images/github_new_button_and_repo_tab.png)
 
 Name your repository something meaningful like: `DrCIsGenuinelyTheBestProfessorIThinkIveEverHadAndHeSoFarHasMadeTheBestJokesAndThisIsntEvenMyImpressionOfHimAsHisTAItsMoresoJustLikeAGeneralRespectForHisLevelOfChillWhichBTWGetsALotBetterIfYouCommitEnoughTimeToHisProjectsAndUseResourcesLikeThisTutorialToLearnTheMaterialForHisClass`
 
 Once you've done that change your repository visibility to Private (I mean you can keep it public but what if a recruiter is looking at your repo and is like wtf! why are there so many profanities in this dude's notes! Hasn't happened to me yet, but it will probably).
 Don't change anything after that and hit create repository. Copy the link that's given by the next page and take note of the `.git` at the end of the link. For example: `https://github.com/kyle-parker-1500/note-taking-tutorial.git` is my remote repo link for this repository.
 
-![Naming Repository](./github_new_repo_creation_2.png)
+![Naming Repository](./images/github_new_repo_creation_2.png)
 
 After that go back to your local machine and type in `git push origin main`. You should see some stuff saying that it worked. If you see a red message you either typed it wrong
 or fucked up the process somehow so I wish you luck. Claude is a really good resource in this case.
@@ -394,7 +394,7 @@ or fucked up the process somehow so I wish you luck. Claude is a really good res
 If you want to only have to type `git push origin main` once per project then you can also type in `git push -u origin main`. This sets up your remote branch to be the upstream of your current branch... essentially linking them together. So the next time you want to push you can use `git push` instead of `git push origin main`. For the record,
 you can also do something similar with `git pull`, but I'll let you figure out how to do that yourself.
 
-![Git Push](./git_commands_8.png)
+![Git Push](./images/git_commands_8.png)
 
 And then we're done! That's it if you only want to take notes, but I can also show you an easy and simple way to study with those notes too. Just go to the [create quizzes with ai](#use-ai-to-create-quizzes-for-yourself) section of this tutorial. I'll even include the prompt for you to copy.
 
@@ -427,12 +427,12 @@ up include future quizzes until I understand it.
 
 This should be uploaded after you finish uploading your notes. You can also say "create coding questions for me to answer". (Make sure to specify the language!) And that's basically it!
 
-![Claude Example](./claude_1.png)
+![Claude Example](./images/claude_1.png)
 
 Here's a quiz I made by uploading this tutorial and asking it to give me quizzes on Nvim and Git. (Also I used my prompt). Here's what grading looks like. But... damn, looks like I missed one. Dang it. (Also note that my answer was correct but Claude fucked up the question so even with this stuff you have to be careful).
 Here's what it output though after this. (Great example of spaced repetition).
 
-![Claude Example Spaced Repetition](./claude_2.png)
+![Claude Example Spaced Repetition](./images/claude_2.png)
 
 Continue quizzing as long as you feel you need it and make sure to quiz yourself before your exam (and get enough sleep the night before 6-8 hours). I usually quiz myself for 2-4 hours in the days leading up to the exam (2-4 total). Coming back to it over multiple days really helps the information stick in your mind. That being said, if your professor allows you a cheat sheet make sure you allocate time to write it! That act of writing down information also helps cement the information in your head. You can even ask the AI what it thinks should be on the cheat sheet. Just make sure you're not printing it!!!! It's vitally important that you write it out yourself. And if your professor doesn't allow it do it anyways, just *don't* take it to class!
 
