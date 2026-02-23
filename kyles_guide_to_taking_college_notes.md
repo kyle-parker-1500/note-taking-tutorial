@@ -47,7 +47,8 @@ Now that we're ready to take notes, let me walk you through my typical setup. Si
 
 ![Image of Folder I Take Notes In](./terminal_notes_folder.png)
 
-#### Terminal Commands [Back To Regular People (More Like Boring People) Tutorial](#initializing-a-git-repo-on-a-local-machine)
+#### Terminal Commands 
+[Back To Regular People (More Like Boring People) Tutorial](#initializing-a-git-repo-on-a-local-machine)
 
 - These instructions are for those of you who don't know how to navigate through the terminal:
   - `cd directory` - to enter a directory → _hint:_ you can use `cd ..` to go up a directory (to go back to the previous directory) or `cd ../../../../..` to go back many directories. Using this you can go pretty much anywhere in your terminal. If you want to navigate to a different hard drive you can do `cd` to get to your root directory, then `cd drive:` it would look like -> `cd v:` or just `v:` if you're lazy (don't worry I know you better than you know yourself... you're lazy).
@@ -156,7 +157,8 @@ Keep in mind you can add numbers before any of these commands to affect many mor
 
 Side note: If you want to get to full screen in LazyVim on Windows you can use `LAlt+Enter` and press it again to leave.
 
-#### Markdown Commands [Link Back to Reg. People Tutorial](#initializing-a-git-repo-on-a-local-machine)
+#### Markdown Commands 
+[Link Back to Reg. People Tutorial](#initializing-a-git-repo-on-a-local-machine)
 
 - Okay! You're in VIM and you know how to use it!!
 - Let's learn some markdown things now!
@@ -306,7 +308,7 @@ might even learn something for once).
 In your terminal type `git init`. If Git is installed properly you should see something like: "Empty repository initialized."
 
 Now let's add some notes. Just right click your empty project and click _add file_. Name the file something like `ThorIsTheGodOfThunderButHeCantEvenRunFasterThanATruckAlsoHeCantReallyFlyThatFastAndHasAnyoneEverThoughtAboutHowHeOnlyEverShootsLightningIMeanWhatIsTheGodOfThunderEvenSupposedToDoMakeLoudNoisesAndScareDogsIntoSubmissionOOOOhScary.md`.
-The `.md` is very important here because that's the type of file we'll be using. It's called _markdown_ and it basically allows us to write super nice and clean notes without doing much actual work ourselves. How do you think I'm writing this tutorial right now? [Here's](#) a link to my notes on markdown.
+The `.md` is very important here because that's the type of file we'll be using. It's called _markdown_ and it basically allows us to write super nice and clean notes without doing much actual work ourselves. How do you think I'm writing this tutorial right now? [Here's](#markdown-commands) a link to my notes on markdown.
 
 Now that you're an expert on markdown I expect you to write some notes into the `.md` file and save it.
 
@@ -392,6 +394,51 @@ or fucked up the process somehow so I wish you luck. Claude is a really good res
 If you want to only have to type `git push origin main` once per project then you can also type in `git push -u origin main`. This sets up your remote branch to be the upstream of your current branch... essentially linking them together. So the next time you want to push you can use `git push` instead of `git push origin main`. For the record,
 you can also do something similar with `git pull`, but I'll let you figure out how to do that yourself.
 
+![Git Push](./git_commands_8.png)
+
 And then we're done! That's it if you only want to take notes, but I can also show you an easy and simple way to study with those notes too. Just go to the [create quizzes with ai](#use-ai-to-create-quizzes-for-yourself) section of this tutorial. I'll even include the prompt for you to copy.
 
 ## Use AI to Create Quizzes for Yourself
+
+Welcome to the section you've all been waiting for! __How do I use AI to help me get better grades on tests?__ Well it's quite simple really. All you have to do is know what to type. But shoot Kyle... I don't know what to type! Well that's alright, because I'm able to show you pretty easily. BUT I WON'T! I'd rather gatekeep this information! You really thought I'd just give it away huh? 
+
+Well you were right. Okay so my favorite AIs to use are Claude and ChatGPT, but we don't like OpenAI that much right now so just go with Claude. It's got a better UI, it's
+trained to better help programmers, it's overall better than Chat. That being said the one limitation for those of use who don't have premium is the chat limit. Now, you can
+get around this by just using multiple accounts but sometimes that's a little annoying. I don't have some special hack for this, I would just say use Chat in that case. All of us at CSUMB (I think) have a premium Chat account; which affords us a much higher chat limit. For this tutorial I'll be using Claude but they're all the same.
+
+Now keep this in mind: __Claude for _quality___, __Chat for _quantity___. That's what I go by anyway, but it's up to you at the end of the day which model you pick. Now, one of the beautiful things about writing your notes in `.md` and uploading them to GitHub is that you can access them from anywhere. Another is that you can clone your repository onto
+just about any machine and use that machine to easily drag and drop your notes into your chosen AI engine.
+
+So do that. Typically I have a limit of around 10 files per single chat but you can just tell Chat or Claude to wait until you've uploaded all your files for instructions. I would recommend that you create a project for each class that you want to study for and put all your notes into those projects.
+
+You have to keep in mind that quality of your notes doesn't really matter here, what you want is to have as many notes with words that you don't understand on there. Typically what I do is copy the slides word for word and add in my own personal notes on top of those. This allows the AI to parse through your notes and find subjects that you're concerned about to quiz you on.
+
+Now, I won't lie, this method works best for multiple choice, that being said, if you don't mind struggling for a little while (we're college students, we're used to struggling so don't be a loser (among college students that would be saying a lot)) then you can probably set the AI up to doing full sentence or coding answers. 
+
+What's nice about using AI for these quizzes and not your friends or me is that AI won't judge you if you mess something up. Actually it'll take it into account and use it for future quizzes if you use this prompt:
+
+```
+Create multiple choice quizzes for me. I want them to be 5 questions long and
+based on the content that's covered in these notes. Please grade the previous quiz before making
+a new one. Only use the content covered within the notes, don't make up questions that you think
+should be on there. Use spaced repetition for your quizzes, if I miss something I want it to show
+up include future quizzes until I understand it.
+```
+
+This should be uploaded after you finish uploading your notes. You can also say "create coding questions for me to answer". (Make sure to specify the language!) And that's basically it!
+
+![Claude Example](./claude_1.png)
+
+Here's a quiz I made by uploading this tutorial and asking it to give me quizzes on Nvim and Git. (Also I used my prompt). Here's what grading looks like. But... damn, looks like I missed one. Dang it. (Also note that my answer was correct but Claude fucked up the question so even with this stuff you have to be careful).
+Here's what it output though after this. (Great example of spaced repetition).
+
+![Claude Example Spaced Repetition](./claude_2.png)
+
+Continue quizzing as long as you feel you need it and make sure to quiz yourself before your exam (and get enough sleep the night before 6-8 hours). I usually quiz myself for 2-4 hours in the days leading up to the exam (2-4 total). Coming back to it over multiple days really helps the information stick in your mind. That being said, if your professor allows you a cheat sheet make sure you allocate time to write it! That act of writing down information also helps cement the information in your head. You can even ask the AI what it thinks should be on the cheat sheet. Just make sure you're not printing it!!!! It's vitally important that you write it out yourself. And if your professor doesn't allow it do it anyways, just *don't* take it to class!
+
+Thanks for reading!
+
+If you enjoyed this tutorial and want to see similar things: I call it fun learning, where the language doesn't matter (fuck it), the message does. Then you can check out
+[kyle-parker-1500.github.io/blog](kyle-parker-1500.github.io/blog). If you get an error that's because I have yet to upload anything to that but hopefully this and many more tutorials will be up there soon. I'm planning on making a "How to contribute to open source" tutorial soon based on my experiences in the CTI microinternship so stay tuned.
+
+Final thing: If you have questions about this tutorial or for my you can either message me on Slack (much preferred) or email me: [kylparker@csumb.edu](mailto:kylparker@csumb.edu)
