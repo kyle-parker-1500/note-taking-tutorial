@@ -386,6 +386,12 @@ Don't change anything after that and hit create repository. Copy the link that's
 
 ![Naming Repository](./github_new_repo_creation_2.png)
 
-After that go back to your local machine and type in `git push origin main`.
+After that go back to your local machine and type in `git push origin main`. You should see some stuff saying that it worked. If you see a red message you either typed it wrong
+or fucked up the process somehow so I wish you luck. Claude is a really good resource in this case.
+
+If you want to only have to type `git push origin main` once per project then you can also type in `git push -u origin main`. This sets up your remote branch to be the upstream of your current branch... essentially linking them together. So the next time you want to push you can use `git push` instead of `git push origin main`. For the record,
+you can also do something similar with `git pull`, but I'll let you figure out how to do that yourself.
+
+And then we're done! That's it if you only want to take notes, but I can also show you an easy and simple way to study with those notes too. Just go to the [create quizzes with ai](#use-ai-to-create-quizzes-for-yourself) section of this tutorial. I'll even include the prompt for you to copy.
 
 ## Use AI to Create Quizzes for Yourself
