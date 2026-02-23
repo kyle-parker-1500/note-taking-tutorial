@@ -9,26 +9,28 @@ I'll attach some of my notes to this document to show you how I generally take n
 
 1. You have to first ask yourself: Am _I_ a VIM user?
 
-- The answer may be no at first but let me tell you this:
-  - I used to hate sitting down to code, mostly because using a mouse was annoying to say the least, so I picked up VIM (and I'm never going back)
-- Basically your answer should be yes, but I'll account for both cases in-case you're not ready to take the leap
-- If you're not ready click this: [Link](#for-regular-people)
+The answer may be no at first but let me tell you this:
+I used to hate sitting down to code, mostly because using a mouse was annoying to say the least, so I picked up VIM (and I'm never going back)
+
+Basically your answer should be yes, but I'll account for both cases in-case you're not ready to take the leap
+If you're not ready click this: [Non-Vim Tutorial (Boring)](#for-regular-people)
 
 ## For VIM Users
 
-By the way, I'm including EMACS and other text editor users in this case. (Although if you use them and not VIM what are you even doing tbh) -> :)
+By the way, I'm including EMACS and other text editor users in this case. (Although if you use them and not VIM what are you even doing tbh) → :)
 
 1. Install VIM. I would suggest **NeoVim** for everyone: Essentially it's VIM, just a newer version
 
 - Here's the [Link](https://neovim.io/doc/install/) for Windows and a blog [post](https://dev.to/ajtech0001/complete-guide-installing-and-configuring-neovim-on-macos-4a9e) for Mac
 - You can also get a NeoVim plugin on both **Intellij** and **VSCode** (which, if you're serious about learning VIM, is a great idea. (It's called immersion))
 
-1. After installing NeoVim and getting it working -> you can check if it's working by doing `nvim --version` on both Unix (Mac and Linux) and Windows
-2. (Optional) I would also _very_ highly recommend you install a plugin manager for NeoVim. This just helps if you want a different look and feel for your NeoVim than the default (which looks boring and doesn't feel good). My current plugin manager is [LazyVim](http://www.lazyvim.org/), because I'm lazy and I like using VIM.
+2. After installing NeoVim and getting it working → you can check if it's working by doing `nvim --version` on both Unix (Mac and Linux) and Windows
+3. (Optional) I would also _very_ highly recommend you install a plugin manager for NeoVim. This just helps if you want a different look and feel for your NeoVim than the default (which looks boring and doesn't feel good). My current plugin manager is [LazyVim](http://www.lazyvim.org/), because I'm lazy and I like using VIM.
 
-- Pro tip: After doing this you can ask AI -> mainly Claude to create plugins for you! (This comes directly from Dr. C...'s blog post from a couple years ago) -> AND IT WORKS!
+- Pro tip: After doing this you can ask AI → mainly Claude to create plugins for you! (This comes directly from Dr. C...'s blog post from a couple years ago) -> AND IT WORKS!
+  - Here's the link if anyone wants it: [Dr. C's Blog](https://clinkenbeard.info/blog/2025/claude-dev-tool-customization/) → I'm not sure how happy he'll be with me for sharing this btw so maybe don't mention it to him
 
-1. If you're not comfortable with using a plugin manager: I would suggest you use either VSCode or Intellij. I personally prefer VSCode because it takes less time to start up normally, and it feels more versatile. But it's really up to you.
+4. If you're not comfortable with using a plugin manager such as LazyVim: I would suggest you use either VSCode or Intellij. I personally prefer VSCode because it takes less time to start up normally, and it feels more versatile. But it's really up to you.
 
 ### Time to take Notes
 
@@ -36,36 +38,56 @@ Now that we're ready to take notes, let me walk you through my typical setup. Si
 
 1. Launch your terminal.
 
-- If you're on _Windows_ you should install the _terminal app_ ([Link](https://apps.microsoft.com/detail/9N0DX20HK701?hl=en-us&gl=US&ocid=pdpshare)) from the Windows Store and use Powershell with it. Alternatively (to powershell, you should definitely get _terminal_), you can use WSL2 to get a Linux style shell within Windows. Here's the tutorial for installation: [Link](https://learn.microsoft.com/en-us/windows/wsl/install)
+![Image of Launched Terminal](./terminal_launch.png)
+
+- If you're on _Windows_ you should install the _terminal app_ ([Link](https://apps.microsoft.com/detail/9N0DX20HK701?hl=en-us&gl=US&ocid=pdpshare)) from the Windows Store and use Powershell with it. Alternatively (to Powershell, you should definitely get _terminal_), you can use WSL2 to get a Linux style shell within Windows. Here's the tutorial for installation: [WSL2 Installation](https://learn.microsoft.com/en-us/windows/wsl/install)
 - Linux and Mac users, you're fine. (I bet all you Linux users are excited to be put before Mac in this sentence. It's probably the first time you've ever been picked first for anything... except hackathons :) )
 
-1. Linux shame aside (I use Windows I shouldn't be talking), navigate to a folder that you want to take notes in.
+2. Linux shame aside (I use Windows I shouldn't be talking), navigate to a folder that you want to take notes in.
 
-#### Terminal Commands [Link Back To Regular People Tutorial](#initializing-a-git-repo-on-a-local-machine)
+![Image of Folder I Take Notes In](./terminal_notes_folder.png)
+
+#### Terminal Commands [Back To Regular People (More Like Boring People) Tutorial](#initializing-a-git-repo-on-a-local-machine)
 
 - These instructions are for those of you who don't know how to navigate through the terminal:
-  - `cd directory` - to enter a directory -> _hint:_ you can use `cd ..` to go up a directory (to go back to the previous directory) or `cd ../../../../..` to go back many directories. Using this you can go pretty much anywhere in your terminal. If you want to navigate to a different hard drive you can do `cd` to get to your root directory, then `cd drive:` it would look like -> `cd v:` or just `v:` if you're lazy.
+  - `cd directory` - to enter a directory → _hint:_ you can use `cd ..` to go up a directory (to go back to the previous directory) or `cd ../../../../..` to go back many directories. Using this you can go pretty much anywhere in your terminal. If you want to navigate to a different hard drive you can do `cd` to get to your root directory, then `cd drive:` it would look like -> `cd v:` or just `v:` if you're lazy (don't worry I know you better than you know yourself... you're lazy).
+
   - `mkdir new_name` you can use `mkdir` to 'make directory', the `directory name` shouldn't contain any spaces. Although, I _think_ you can include spaces if you do something like `mkdir "new_directory"` but that's bad practice, especially for programmers.
+
   - If you want to open VSCode from your current directory you can use `code .`, make sure you have an _environment variable_ set up for VSCode first. You can also just open any file in VSCode using `code /this/is/a/path/name/directory(or file)`. Keep in mind, if you want to open a file you have to specify the file type.
-  - `ls` -> use `ls` to list everything in the current or specified directory. Specified meaning `ls /path/to/dir`
-  - `mv` to either move a file or rename -> _moving_: `mv filename.filetype ../previous_directory` or _renaming_: `mv filename.filetype new_filename.filetype`, you can also rename directories with this command.
-  - `rm` -> be careful with this one. This is how you delete things: `rm filename.filetype`, if someone tells you to `rm -rf` something DON'T LISTEN TO THEM!! `-rf` is an option that recursively forces all files and all directories to be removed from your current or specified directory all the way down (this is only for Mac and Linux users though... I think).
-  - Final thing -> use `pwd` to check your _present working directory_
-  - That's basically it for basic terminal commands (these apply to both windows terminal and unix terminals). If you want something more advanced check out some guides online: Here's one -> [Link](https://serverspace.us/support/help/windows-cmd-commands-cheat-sheet/)
+
+  - `ls` → use `ls` to list everything in the current or specified directory. Specified meaning `ls /path/to/dir`
+
+  - `mv` to either move a file or rename → _moving_: `mv filename.filetype ../previous_directory` or _renaming_: `mv filename.filetype new_filename.filetype`, you can also rename directories with this command.
+
+  - `rm` → be careful with this one. This is how you delete things: `rm filename.filetype`, if someone tells you to `rm -rf` something DON'T LISTEN TO THEM!! `-rf` is an option that recursively forces all files and all directories to be removed from your current or specified directory all the way down (this is only for Mac and Linux users though... I think).
+
+  - `clear` → use this to clear your terminal screen of all the "hard" work you've been doing
+
+  - Final thing → use `pwd` to check your _present working directory_
+
+  - That's basically it for basic terminal commands (these apply to both windows terminal and unix terminals). If you want something more advanced check out some guides online: Here's one → [Advanced Guide (For Nerds)](https://serverspace.us/support/help/windows-cmd-commands-cheat-sheet/)
+
+  Here are those commands in action:
+  ![Terminal Commands Demonstration 1](./terminal_commands_demonstration_1.png)
+  ![Terminal Commands Demonstration 2](./terminal_commands_demonstration_2.png)
+  ![Terminal Commands Demonstration 3](./terminal_commands_demonstration_3.png)
+  You can also use `Tab` the key on your keyboard to autocomplete your command (you're dumb for still reading the stuff inside these parenthesis)
+
 
 1. Now that our basic terminal commands tutorial is over let's get on to notes:
 
 - Navigate to the folder that you want your notes to be in. I would suggest naming it something like `SCHOOL_NAME/CLASS_NAME/notes` or you can do what I do and just have one directory for all notes `SCHOOL_NAME/CURRENT_SEMESTER/CLASS_NAME/CURRENT_WEEK (or current subject)`
   - Make sure that you are inside the directory that you want to be in. You can check this by doing `pwd` (present working directory)
 
-1. Now we're going to initialize a Git repository. If you don't already have Git -> Git it: [Link](https://git-scm.com/install/) \*Nudge Nudge\* Git it, Git it... Okay I'll stop
+2. Now we're going to initialize a Git repository. If you don't already have Git → Git it: [Link](https://git-scm.com/install/) \*Nudge Nudge\* Git it, Git it... Okay I'll stop
 
 - We do this for 2 reasons: 1. So we can push changes to GitHub and it's remote repository (and access them from anywhere), and 2. So if we f\*uck up (yes ik I didn't censor it properly), and want to restore an old version of our notes, we totally can.
   - By the way, this also allows your friends to add their own notes for a repository \*_Pyramid Scheme_\*
 - So with my reasoning explained and Git installed: Let's do `git init`, alternatively you can clone a remote repository, but I prefer this method because it's more challenging, and I like challenging others.
 - This initializes a new repository on our local machine, that doesn't implicitly create a repository on GitHub, however. But we'll get to that.
 
-1. Now let's add some notes, these can be temporary or they can be real notes and you can come back to this tutorial later. Alternatively, you can drag this file into your notes folder.
+3. Now let's add some notes, these can be temporary or they can be real notes and you can come back to this tutorial later. Alternatively, you can drag this file into your notes folder.
 
 - I'll assume you want to learn how to use VIM though.
 - With NeoVim installed: You can navigate to your notes folder and type in `nvim filename.md`. We'll be using _markdown_ files for our notes. This is because they're easy to write and we can translate them into beautiful notes just by typing in some symbols. Here's a [Link](https://www.datacamp.com/cheat-sheet/markdown-cheat-sheet-23).
@@ -76,6 +98,8 @@ Now that we're ready to take notes, let me walk you through my typical setup. Si
 First off, here's a quick online game that you can play to get some of the movements down. [Link](https://vim-adventures.com/)
 
 Vim is definitely much easier once you get the muscle memory down for the movements/commands. If you feel like this is too much, I can assure you, it only gets worse. BUT! Vim is an incredibly powerful text editor (or whatever it's actually called), and in a few months, or even a year, you'll be incredibly glad that you pushed yourself to learn it now. (It's useful in so many applications (also it looks cool)).
+
+Ever pictured yourself doing some Mr. Robot type shit, me too! But not the illegal stuff, just the typing fast and being emo stuff.
 
 - Tip: You can run `vimtutor` in the terminal to learn the first commands too!
 - Got that tip from: [Link](https://vim.rtorr.com/)
@@ -142,6 +166,7 @@ Side note: If you want to get to full screen in LazyVim on Windows you can use `
 | #                             | Header 1 (Biggest)                                                                 | # Header #                                                                                        |
 | ##                            | Header 2 (Second Biggest)                                                          | ## Header ##                                                                                      |
 | ### (can go up to 6 #)        | Header 3 (Third Biggest)                                                           | ### Header ###                                                                                    |
+| These Go Up to 6 ###### so I'm moving on. They just keep making the header text smaller. | |
 | \`\`                          | Inline Code Highlighting (no syntax highlighting)                                  | `code`                                                                                            |
 | \`\`\`name of language \`\`\` | Block Code Highlighting (provides syntax highlighting if you provide the language) | `c++ int x = 0;`                                                                                  |
 | 1.                            | Ordered List (Can indent)                                                          | 1.                                                                                                |
@@ -151,16 +176,19 @@ Side note: If you want to get to full screen in LazyVim on Windows you can use `
 | \-\[\]                        | Checklist                                                                          | -[] (may not display properly)                                                                    |
 | \[\]\(\)                      | Link Something                                                                     | [Text For Link Here](Link in here (no quotes needed)) [Link](https://github.com/kyle-parker-1500) |
 | \!\[\]\(\)                    | Display Image                                                                      | ![Alt Text For Image Here](Path name (no quotes needed))                                          |
+| \[\]\(\)                     | Link a Header | [Link Text](\#reference-goes-here-no-spaces-all-lowercase\)                                          |
 
-These Go Up to 6 ###### so I'm moving on. They just keep making the header text smaller.
 
 I think that's about it. Like VIM there's many more, but I either haven't learned them or forgot about them. Play around with it though. You can also insert tables, but I'll let you figure that out on your own. LazyVim makes it really easy btw!
 
 By the way! You can also use `<br>` to insert a newline just like html. In fact, you can use quite a few html tags in markdown.
 
+<b>stuff is bold here using a \<b> tag</b>
+
 Oh well, you're in CS because you want money right, so do some research.
 
-Now that you know VIM and Markdown properly, write some notes! I'll wait right here.
+Now that you know VIM and Markdown properly, write some notes! I'll wait right here . .
+. <br>
 . <br>
 . <br>
 . <br>
@@ -178,34 +206,55 @@ Now that we have our notes, let's connect them to a GitHub remote repository so 
 1. Go to GitHub and navigate to your account profile. It's typically going to be `https://github.com/your-username/`
 1. Navigate to the `Repositories` tab at the top next to `Overview`
 1. Click on `New` in the top right corner
-1. Give your repository a meaningful name (it makes it easier, trust me). I normally name mine something like: `IronManWasTheBestSupervillanAroundUntilHeTragicallyBecameASuperHeroAndSavedALotOfLivesForSomeReasonIMeanDudeHeDidntHaveToSnap` or something like that.
-1. Choose your repo visibility. Since we're writing notes, I typically make mine private so people don't find my badly written notes when searching for one of my projects
-1. Don't change anything besides that and create the repository.
-1. A window should pop up displaying a link similar to this one: `https://github.com/your-username/your-repo-name.git`
 
-- Note the `.git`, that's important for setting up your local repository so make sure you have it
+![GitHub Where the New Button Is](./github_new_button_and_repo_tab.png)
 
-1. Copy the link and go back to your local machine (make sure you open the terminal (or keep it open) to where your notes are being stored)
-2. If you don't know if your notes are in your current directory remember to use `ls` (list) to check
-3. Your local repository should be initialized (remember we did `git init`), so we can now do: `git remote -v` to check if we have any remote repositories connected to our local one
-4. If anything other than absolutely nothing comes up either keep it because you likely know what you're doing OR do `git remote remove origin` (that removes your remote repository link)
-5. Also do `git status`. If, at the top left it says you're on branch `master` then you want to execute this command `git branch -M main` which will rename it to main
+4. Give your repository a meaningful name (it makes it easier, trust me). I normally name mine something like: `IronManWasTheBestSupervillanAroundUntilHeTragicallyBecameASuperHeroAndSavedALotOfLivesForSomeReasonIMeanDudeHeDidntHaveToSnap` or something like that.
+5. Choose your repo visibility. Since we're writing notes, I typically make mine private so people don't find my badly written notes when searching for one of my projects
+6. Don't change anything besides that and create the repository.
+
+![Repo Creation](./github_repo_creation.png)
+
+7. A window should pop up displaying a link similar to this one: `https://github.com/your-username/your-repo-name.git`
+
+- Note the `.git` at the end of the link, that's important for setting up your local repository so make sure you have it
+
+8. Copy the link and go back to your local machine (make sure you open the terminal (or keep it open) to where your notes are being stored)
+
+![After Creating Repo (Still in GitHub)](./github_repo_creation_2.png)
+
+9. If you don't know if your notes are in your current directory remember to use `ls` (list) to check
+10. Your local repository should be initialized (remember we did `git init`), so we can now do: `git remote -v` to check if we have any remote repositories connected to our local one
+
+![Git Commands 1](./git_commands_1.png)
+
+11. If anything other than absolutely nothing comes up either keep it because you likely know what you're doing OR do `git remote remove origin` (that removes your remote repository link)
+
+![Git Commands 2](./git_commands_2.png)
+
+12. Also do `git status`. If, at the top left it says you're on branch `master` then you want to execute this command `git branch -M main` which will rename it to main
 
 - The reason we do this is because most of GitHub has moved away from using `master` as a root origin branch name
 
-1. Now execute this command: `git remote add origin your-link` for example: `git remote add origin https://github.com/kyle-parker-1500/note-taking-tutorial.git` That's my repository for this tutorial.
-2. It should say something along the lines of: _You didn't fuck up_
-3. Once that's done we want to now pull any changes made to our remote repository. We know there aren't any changes but it's good practice.
+13. Now execute this command: `git remote add origin your-link` for example: `git remote add origin https://github.com/kyle-parker-1500/note-taking-tutorial.git` That's my repository for this tutorial.
+14. It should say something along the lines of: _You didn't fuck up_
 
-- So do `git pull` to update your current branch (we should be on `main`)
+![Adding Remote Origin Link](./git_commands_4.png)
+
+15. Once that's done we want to now pull any changes made to our remote repository. We know there aren't any changes but it's good practice.
+
+- So do `git pull origin main` to update your current branch (we should be on `main`)
 - If you aren't sure use `git status` to check
+- If it's saying something along the lines of: `fatal: couldn't find remote ref main` then after screaming profanities at it for a little while:
+  - It's basically saying that we need to add things to our remote before we pull any changes so just move on to the next step and come back here later.
 
-1. Finally, we can stage our changes to be committed with `git add filename` or `git add .` -> this one stages all changes to be committed, the first one only stages specific files
-2. Now that we've staged our changes (you can do `git status` to check if they're staged) we can do `git commit -m "~-[,,_,,]:3 Meaningful Message"`. The `-m` stands for message, but you can omit it to pull up a VIM terminal to type your message to. (I told you VIM was useful!)
-3. Now that we've committed we can do `git push origin main` (for now you're just going to push to main, but you can theoretically push to any remote branch that you want to). This will take our committed changes and merge them into our origin/upstream branch on the remote repo.
+16. Finally, we can stage our changes to be committed with `git add filepath/to/filename.filetype` or `git add .` → this one stages all changes to be committed, the first one only stages specific files
+17. Now that we've staged our changes (you can do `git status` to check if they're staged) we can do `git commit -m "~-[,,_,,]:3 Meaningful Message"`. The `-m` stands for message, but you can omit it to pull up a VIM terminal to type your message to. (I told you VIM was useful!)
+18. Now that we've committed we can do `git push origin main` (for now you're just going to push to main, but you can theoretically push to any remote branch that you want to). This will take our committed changes and merge them into our origin/upstream branch on the remote repo.
 
-- Something to note: If you're lazy like me and don't want to type out 4 words each time you push, you can do `git push -u origin main`
+- Something to note: If you're lazy like me and don't want to type out 4 words each time you push (I mean tbf they're hard words to type every few hours), you can do `git push -u origin main`
 - This will set the upstream branch of `main` to be `origin main`, and then each time after that, to push, you can use: `git push`
+- You can do something similar with `git pull` &rarr; Look it up!
 
 You should see a lot of text that says that Git is doing stuff. And then it should say successfully merged or something like that.
 
@@ -233,7 +282,7 @@ With that being said: go Git [Git](https://git-scm.com/install/) if you don't ha
 
 If you don't know whether or not you have Git installed you can check by navigating to your terminal (for Mac and Linux users) or literally
 going to [terminal](https://apps.microsoft.com/detail/9N0DX20HK701?hl=en-us&gl=US&ocid=pdpshare) for Windows users. (Install it if you
-don't have it already! Please for the love of code don't use Cmd); <- this `;` was unintentional but I'm leaving it.
+don't have it already! Please for the love of code don't use Cmd); ← this `;` was unintentional but I'm leaving it.
 
 Okay, launch your favorite IDE (Integrated Development Environment) (e.g.: Intellij or VSCode) and then open a new project.
 
@@ -243,7 +292,7 @@ Okay let's initialize a new Git repo on your local machine. First, make sure you
 With Intellij I think the hotkey (for Windows users) is: _ctrl+escape_ for VSCode I think it's _ctrl+\`_ but don't quote me on that!
 
 Once your terminal is open make sure that you're in your project's directory. To double check this use `pwd` (present working directory) to see
-what your current file path is. You can get the filepath of your project by right clicking on where ever your project directory is and clicking _open in_ and then your file explorer of choice -> ex: Finder for Mac. You can see all the terminal commands that we'll be using by clicking: [Here](#terminal-commands).
+what your current file path is. You can get the filepath of your project by right clicking on where ever your project directory is and clicking _open in_ and then your file explorer of choice → ex: Finder for Mac. You can see all the terminal commands that we'll be using by clicking: [Here](#terminal-commands).
 
 - If your terminal says that you aren't in the correct directory, make sure to click the link above and go check out the terminal commands part of
   this.
