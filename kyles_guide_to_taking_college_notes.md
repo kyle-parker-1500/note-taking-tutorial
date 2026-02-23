@@ -386,4 +386,6 @@ Don't change anything after that and hit create repository. Copy the link that's
 
 ![Naming Repository](./github_repo_creation_2.png)
 
+After that go back to your local machine and type in `git push origin main`.
+
 ## Use AI to Create Quizzes for Yourself
