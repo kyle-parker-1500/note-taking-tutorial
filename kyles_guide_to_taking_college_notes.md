@@ -384,7 +384,7 @@ Name your repository something meaningful like: `DrCIsGenuinelyTheBestProfessorI
 Once you've done that change your repository visibility to Private (I mean you can keep it public but what if a recruiter is looking at your repo and is like wtf! why are there so many profanities in this dude's notes! Hasn't happened to me yet, but it will probably).
 Don't change anything after that and hit create repository. Copy the link that's given by the next page and take note of the `.git` at the end of the link. For example: `https://github.com/kyle-parker-1500/note-taking-tutorial.git` is my remote repo link for this repository.
 
-![Naming Repository](./github_repo_creation_2.png)
+![Naming Repository](./github_new_repo_creation_2.png)
 
 After that go back to your local machine and type in `git push origin main`.
 
