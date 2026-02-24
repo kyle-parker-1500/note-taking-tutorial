@@ -12,12 +12,11 @@ This is a step by step guide to show you how to _A_, take good notes and _B_, st
   5. [The Git Part](#the-git-part)
 - [Effective Notes For Regular People](#for-regular-people)
   1. [Initializing a Git Repo](#initializing-a-git-repo-on-a-local-machine)
-    1. [Terminal Commands](#terminal-commands)
-    2. [Markdown Commands](#markdown-commands)
-  2. [Setting up a GitHub Repo](#setting-up-github-repository)
+  1. [Terminal Commands](#terminal-commands)
+  1. [Markdown Commands](#markdown-commands)
+  1. [Setting up a GitHub Repo](#setting-up-github-repository)
 - [Taking Notes with AI](#use-ai-to-create-quizzes-for-yourself)
   1. [Prompt](#prompt)
- 
 
 ## Taking "Effective" Notes
 
@@ -422,7 +421,7 @@ And then we're done! That's it if you only want to take notes, but I can also sh
 Welcome to the section you've all been waiting for! **How do I use AI to help me get better grades on tests?** Well it's quite simple really. All you have to do is know what to type. But shoot Kyle... I don't know what to type! Well that's alright, because I'm able to show you pretty easily. BUT I WON'T! I'd rather gatekeep this information! You really thought I'd just give it away huh?
 
 Well you were right. Okay so my favorite AIs to use are Claude and ChatGPT, but we don't like OpenAI that much right now so just go with Claude. It's got a better UI, it's
-trained to better help programmers, it's overall better than Chat. That being said the one limitation for those of use who don't have premium is the chat limit. Now, you can
+trained to better help programmers, it's overall better than Chat. That being said the one limitation for those of us who don't have premium is the chat limit. Now, you can
 get around this by just using multiple accounts but sometimes that's a little annoying. I don't have some special hack for this, I would just say use Chat in that case. All of us at CSUMB (I think) have a premium Chat account; which affords us a much higher chat limit. For this tutorial I'll be using Claude but they're all the same.
 
 Now keep this in mind: **Claude for _quality_**, **Chat for _quantity_**. That's what I go by anyway, but it's up to you at the end of the day which model you pick. Now, one of the beautiful things about writing your notes in `.md` and uploading them to GitHub is that you can access them from anywhere. Another is that you can clone your repository onto
@@ -432,7 +431,7 @@ So do that. Typically I have a limit of around 10 files per single chat but you 
 
 You have to keep in mind that quality of your notes doesn't really matter here, what you want is to have as many notes with words that you don't understand on there. Typically what I do is copy the slides word for word and add in my own personal notes on top of those. This allows the AI to parse through your notes and find subjects that you're concerned about to quiz you on.
 
-Now, I won't lie, this method works best for multiple choice, that being said, if you don't mind struggling for a little while (we're college students, we're used to struggling so don't be a loser (among college students that would be saying a lot)) then you can probably set the AI up to doing full sentence or coding answers.
+Now, I won't lie, this method works best for multiple choice, that being said, if you don't mind struggling for a little while (we're college students, we're used to struggling so don't be a loser (among college students that would be saying a lot)) then you can probably set the AI up for doing full sentence or coding answers.
 
 What's nice about using AI for these quizzes and not your friends or me is that AI won't judge you if you mess something up. Actually it'll take it into account and use it for future quizzes if you use this prompt:
 
@@ -443,7 +442,7 @@ Create multiple choice quizzes for me. I want them to be 5 questions long and
 based on the content that's covered in these notes. Please grade the previous quiz before making
 a new one. Only use the content covered within the notes, don't make up questions that you think
 should be on there. Use spaced repetition for your quizzes, if I miss something I want it to show
-up include future quizzes until I understand it.
+up in future quizzes until I understand it.
 ```
 
 This should be uploaded after you finish uploading your notes. You can also say "create coding questions for me to answer". (Make sure to specify the language!) And that's basically it!
@@ -451,7 +450,7 @@ This should be uploaded after you finish uploading your notes. You can also say 
 ![Claude Example](./images/claude_1.png)
 
 Here's a quiz I made by uploading this tutorial and asking it to give me quizzes on Nvim and Git. (Also I used my prompt). Here's what grading looks like. But... damn, looks like I missed one. Dang it. (Also note that my answer was correct but Claude fucked up the question so even with this stuff you have to be careful).
-Here's what it output though after this. (Great example of spaced repetition).
+Here's the output after this: (Great example of spaced repetition).
 
 ![Claude Example Spaced Repetition](./images/claude_2.png)
 
