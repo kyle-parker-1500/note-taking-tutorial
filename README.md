@@ -2,6 +2,23 @@
 
 This is a step by step guide to show you how to _A_, take good notes and _B_, study more efficiently.
 
+# Table of Contents
+
+- [Effective Notes with NeoVim](#taking-effective-notes)
+  1. [For VIM Users](#for-vim-users)
+  2. [Terminal Commands](#terminal-commands)
+  3. [NeoVim/Vim Tutorial](#neovim-tutorial)
+  4. [Markdown Commands](#markdown-commands)
+  5. [The Git Part](#the-git-part)
+- [Effective Notes For Regular People](#for-regular-people)
+  1. [Initializing a Git Repo](#initializing-a-git-repo-on-a-local-machine)
+    1. [Terminal Commands](#terminal-commands)
+    2. [Markdown Commands](#markdown-commands)
+  2. [Setting up a GitHub Repo](#setting-up-github-repository)
+- [Taking Notes with AI](#use-ai-to-create-quizzes-for-yourself)
+  1. [Prompt](#prompt)
+ 
+
 ## Taking "Effective" Notes
 
 In this case, any notes are effective notes, so the style of them doesn't really matter. <br>
@@ -94,7 +111,7 @@ Now that we're ready to take notes, let me walk you through my typical setup. Si
 - With NeoVim installed: You can navigate to your notes folder and type in `nvim filename.md`. We'll be using _markdown_ files for our notes. This is because they're easy to write and we can translate them into beautiful notes just by typing in some symbols. Here's a [Link](https://www.datacamp.com/cheat-sheet/markdown-cheat-sheet-23).
 - That last command should open up a NeoVim terminal! Now, let's do a quick VIM tutorial. This most certainly will not cover everything but it is enough to get you started.
 
-### NeoVim/Vim Tutorial
+### NeoVim Tutorial
 
 First off, here's a quick online game that you can play to get some of the movements down. [Link](https://vim-adventures.com/)
 
@@ -374,6 +391,8 @@ P.S. If you end up in that window simply hit `shift+o` then type a message, then
 
 ![Committing With Fail](./images/git_commands_6.png)
 
+## Setting up GitHub Repository
+
 Now navigate to your personal GitHub page. For example, the link for my page would look something like: `https://github.com/kyle-parker-1500/`
 It's right [here](https://github.com/kyle-parker-1500/) if you want to check it out.
 
@@ -416,6 +435,8 @@ You have to keep in mind that quality of your notes doesn't really matter here, 
 Now, I won't lie, this method works best for multiple choice, that being said, if you don't mind struggling for a little while (we're college students, we're used to struggling so don't be a loser (among college students that would be saying a lot)) then you can probably set the AI up to doing full sentence or coding answers. 
 
 What's nice about using AI for these quizzes and not your friends or me is that AI won't judge you if you mess something up. Actually it'll take it into account and use it for future quizzes if you use this prompt:
+
+## Prompt
 
 ```
 Create multiple choice quizzes for me. I want them to be 5 questions long and
