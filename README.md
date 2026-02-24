@@ -64,7 +64,8 @@ Now that we're ready to take notes, let me walk you through my typical setup. Si
 
 ![Image of Folder I Take Notes In](./images/terminal_notes_folder.png)
 
-#### Terminal Commands 
+#### Terminal Commands
+
 [Back To Regular People (More Like Boring People) Tutorial](#initializing-a-git-repo-on-a-local-machine)
 
 - These instructions are for those of you who don't know how to navigate through the terminal:
@@ -91,7 +92,6 @@ Now that we're ready to take notes, let me walk you through my typical setup. Si
   ![Terminal Commands Demonstration 2](./images/terminal_commands_demonstration_2.png)
   ![Terminal Commands Demonstration 3](./images/terminal_commands_demonstration_3.png)
   You can also use `Tab` the key on your keyboard to autocomplete your command (you're dumb for still reading the stuff inside these parenthesis)
-
 
 1. Now that our basic terminal commands tutorial is over let's get on to notes:
 
@@ -174,29 +174,29 @@ Keep in mind you can add numbers before any of these commands to affect many mor
 
 Side note: If you want to get to full screen in LazyVim on Windows you can use `LAlt+Enter` and press it again to leave.
 
-#### Markdown Commands 
+#### Markdown Commands
+
 [Link Back to Reg. People Tutorial](#initializing-a-git-repo-on-a-local-machine)
 
 - Okay! You're in VIM and you know how to use it!!
 - Let's learn some markdown things now!
 
-| Symbols                       | What They Do:                                                                      | What They Should Look Like                                                                        |
-| ----------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| #                             | Header 1 (Biggest)                                                                 | # Header #                                                                                        |
-| ##                            | Header 2 (Second Biggest)                                                          | ## Header ##                                                                                      |
-| ### (can go up to 6 #)        | Header 3 (Third Biggest)                                                           | ### Header ###                                                                                    |
-| These Go Up to 6 ###### so I'm moving on. They just keep making the header text smaller. | |
-| \`\`                          | Inline Code Highlighting (no syntax highlighting)                                  | `code`                                                                                            |
-| \`\`\`name of language \`\`\` | Block Code Highlighting (provides syntax highlighting if you provide the language) | `c++ int x = 0;`                                                                                  |
-| 1.                            | Ordered List (Can indent)                                                          | 1.                                                                                                |
-| \-                            | Unordered List (Can indent)                                                        | -                                                                                                 |
-| \*word\*                      | Italics                                                                            | _word_                                                                                            |
-| \*\*word\*\*                  | Bold                                                                               | **word**                                                                                          |
-| \-\[\]                        | Checklist                                                                          | -[] (may not display properly)                                                                    |
-| \[\]\(\)                      | Link Something                                                                     | [Text For Link Here](Link in here (no quotes needed)) [Link](https://github.com/kyle-parker-1500) |
-| \!\[\]\(\)                    | Display Image                                                                      | ![Alt Text For Image Here](Path name (no quotes needed))                                          |
-| \[\]\(\)                     | Link a Header | [Link Text](\#reference-goes-here-no-spaces-all-lowercase\)                                          |
-
+| Symbols                                                                                  | What They Do:                                                                      | What They Should Look Like                                                                        |
+| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| #                                                                                        | Header 1 (Biggest)                                                                 | # Header #                                                                                        |
+| ##                                                                                       | Header 2 (Second Biggest)                                                          | ## Header ##                                                                                      |
+| ### (can go up to 6 #)                                                                   | Header 3 (Third Biggest)                                                           | ### Header ###                                                                                    |
+| These Go Up to 6 ###### so I'm moving on. They just keep making the header text smaller. |                                                                                    |
+| \`\`                                                                                     | Inline Code Highlighting (no syntax highlighting)                                  | `code`                                                                                            |
+| \`\`\`name of language \`\`\`                                                            | Block Code Highlighting (provides syntax highlighting if you provide the language) | `c++ int x = 0;`                                                                                  |
+| 1.                                                                                       | Ordered List (Can indent)                                                          | 1.                                                                                                |
+| \-                                                                                       | Unordered List (Can indent)                                                        | -                                                                                                 |
+| \*word\*                                                                                 | Italics                                                                            | _word_                                                                                            |
+| \*\*word\*\*                                                                             | Bold                                                                               | **word**                                                                                          |
+| \-\[\]                                                                                   | Checklist                                                                          | -[] (may not display properly)                                                                    |
+| \[\]\(\)                                                                                 | Link Something                                                                     | [Text For Link Here](Link in here (no quotes needed)) [Link](https://github.com/kyle-parker-1500) |
+| \!\[\]\(\)                                                                               | Display Image                                                                      | ![Alt Text For Image Here](Path name (no quotes needed))                                          |
+| \[\]\(\)                                                                                 | Link a Header                                                                      | [Link Text](\#reference-goes-here-no-spaces-all-lowercase\)                                       |
 
 I think that's about it. Like VIM there's many more, but I either haven't learned them or forgot about them. Play around with it though. You can also insert tables, but I'll let you figure that out on your own. LazyVim makes it really easy btw!
 
@@ -301,7 +301,7 @@ With that being said: go Git [Git](https://git-scm.com/install/) if you don't ha
 
 If you don't know whether or not you have Git installed you can check by navigating to your terminal (for Mac and Linux users) or literally
 going to [terminal](https://apps.microsoft.com/detail/9N0DX20HK701?hl=en-us&gl=US&ocid=pdpshare) for Windows users. (Install it if you
-don't have it already! Please for the love of code don't use Cmd); ← this `;` was unintentional but I'm leaving it.
+don't have it already! Please for the love of code don't use Cmd); ← this `;` was unintentional but I'm leaving it. Anyway just do `git --version` to check the Git version on your terminal. If it's not working there's a good chance you either don't have it installed or messed up somewhere. In that case I would say to either ask Claude (love Claude for fixing Git issues) OR look it up.
 
 Okay, launch your favorite IDE (Integrated Development Environment) (e.g.: Intellij or VSCode) and then open a new project.
 
@@ -372,7 +372,7 @@ this is for you.
 
 Type in `git status`. If it says on branch `main`, you're doing good. If it says on branch `master` we're going to have to change some things.
 
-- The reason we have to change things is because `GitHub` is transitioning away from development branches being named `master`, why? no fucking idea. But they make it *really* fucking annoying if we don't rename it.
+- The reason we have to change things is because `GitHub` is transitioning away from development branches being named `master`, why? no fucking idea. But they make it _really_ fucking annoying if we don't rename it.
 - On the bright side, I get to show you how to rename a branch in Git.
 
 So do `git branch -M main`, that should rename your branch from `master` to `main`. Do `git status` and if it says something like: You're on branch main. Then you're good. For everyone who it says something else for: good luck!
@@ -419,20 +419,20 @@ And then we're done! That's it if you only want to take notes, but I can also sh
 
 ## Use AI to Create Quizzes for Yourself
 
-Welcome to the section you've all been waiting for! __How do I use AI to help me get better grades on tests?__ Well it's quite simple really. All you have to do is know what to type. But shoot Kyle... I don't know what to type! Well that's alright, because I'm able to show you pretty easily. BUT I WON'T! I'd rather gatekeep this information! You really thought I'd just give it away huh? 
+Welcome to the section you've all been waiting for! **How do I use AI to help me get better grades on tests?** Well it's quite simple really. All you have to do is know what to type. But shoot Kyle... I don't know what to type! Well that's alright, because I'm able to show you pretty easily. BUT I WON'T! I'd rather gatekeep this information! You really thought I'd just give it away huh?
 
 Well you were right. Okay so my favorite AIs to use are Claude and ChatGPT, but we don't like OpenAI that much right now so just go with Claude. It's got a better UI, it's
 trained to better help programmers, it's overall better than Chat. That being said the one limitation for those of use who don't have premium is the chat limit. Now, you can
 get around this by just using multiple accounts but sometimes that's a little annoying. I don't have some special hack for this, I would just say use Chat in that case. All of us at CSUMB (I think) have a premium Chat account; which affords us a much higher chat limit. For this tutorial I'll be using Claude but they're all the same.
 
-Now keep this in mind: __Claude for _quality___, __Chat for _quantity___. That's what I go by anyway, but it's up to you at the end of the day which model you pick. Now, one of the beautiful things about writing your notes in `.md` and uploading them to GitHub is that you can access them from anywhere. Another is that you can clone your repository onto
+Now keep this in mind: **Claude for _quality_**, **Chat for _quantity_**. That's what I go by anyway, but it's up to you at the end of the day which model you pick. Now, one of the beautiful things about writing your notes in `.md` and uploading them to GitHub is that you can access them from anywhere. Another is that you can clone your repository onto
 just about any machine and use that machine to easily drag and drop your notes into your chosen AI engine.
 
 So do that. Typically I have a limit of around 10 files per single chat but you can just tell Chat or Claude to wait until you've uploaded all your files for instructions. I would recommend that you create a project for each class that you want to study for and put all your notes into those projects.
 
 You have to keep in mind that quality of your notes doesn't really matter here, what you want is to have as many notes with words that you don't understand on there. Typically what I do is copy the slides word for word and add in my own personal notes on top of those. This allows the AI to parse through your notes and find subjects that you're concerned about to quiz you on.
 
-Now, I won't lie, this method works best for multiple choice, that being said, if you don't mind struggling for a little while (we're college students, we're used to struggling so don't be a loser (among college students that would be saying a lot)) then you can probably set the AI up to doing full sentence or coding answers. 
+Now, I won't lie, this method works best for multiple choice, that being said, if you don't mind struggling for a little while (we're college students, we're used to struggling so don't be a loser (among college students that would be saying a lot)) then you can probably set the AI up to doing full sentence or coding answers.
 
 What's nice about using AI for these quizzes and not your friends or me is that AI won't judge you if you mess something up. Actually it'll take it into account and use it for future quizzes if you use this prompt:
 
@@ -455,7 +455,7 @@ Here's what it output though after this. (Great example of spaced repetition).
 
 ![Claude Example Spaced Repetition](./images/claude_2.png)
 
-Continue quizzing as long as you feel you need it and make sure to quiz yourself before your exam (and get enough sleep the night before 6-8 hours). I usually quiz myself for 2-4 hours in the days leading up to the exam (2-4 total). Coming back to it over multiple days really helps the information stick in your mind. That being said, if your professor allows you a cheat sheet make sure you allocate time to write it! That act of writing down information also helps cement the information in your head. You can even ask the AI what it thinks should be on the cheat sheet. Just make sure you're not printing it!!!! It's vitally important that you write it out yourself. And if your professor doesn't allow it do it anyways, just *don't* take it to class!
+Continue quizzing as long as you feel you need it and make sure to quiz yourself before your exam (and get enough sleep the night before 6-8 hours). I usually quiz myself for 2-4 hours in the days leading up to the exam (2-4 total). Coming back to it over multiple days really helps the information stick in your mind. That being said, if your professor allows you a cheat sheet make sure you allocate time to write it! That act of writing down information also helps cement the information in your head. You can even ask the AI what it thinks should be on the cheat sheet. Just make sure you're not printing it!!!! It's vitally important that you write it out yourself. And if your professor doesn't allow it do it anyways, just _don't_ take it to class!
 
 Thanks for reading!
 
